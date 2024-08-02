@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* Apply the Montserrat font to the whole document */
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Background Image */
+.image {
+    background-image: url("../site-assets/encode-logo.svg");
+    background-size: 15%;
+    background-position: center center;
+    background-position-y: -10px;
+    background-repeat: repeat;
+    display: flex;
+    opacity: 0.24;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: -1;
+    position: relative;
+}
+
+/* Main Content */
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Body */
+body {
+    margin: 0;
+    overflow: auto;
+    position: relative;
+    background-color: #212020 /*#f0f0f0*/;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #212020;
+}
+@font-face {
+    font-family: grot;
+    src: url("../site-assets/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf");
+}
+#questions {
+    border: 2px solid #e44235 /*#4d84b8*/;
+    padding: 20px;
+    font-family: grot;
+    margin: 0 120px;
+    margin-bottom: 40px;
+    color: #f0f0f0;
+    font-size: xx-large;
+    background-color: #212020;
+}
+h3 {
+    /* margin-left: 25px; */
+    margin-top: -5px;
+    text-align: center;
+    /* display: none; */
+    color: #f0f0f0;
+}
+#timer {
+    top: 0;
+    right: 0;
+    /* position: absolute; */
+    position: fixed;
+    margin-right: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #f0f0f0;
+}
+img{
+    z-index: -1;
+    position: absolute;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+}
+#encode {
+    width: 250px;
+    height: auto;
+    top: -5px;
+    left: calc(50% - 125px);
+    z-index: 3;
+}
+#halocon {
+    position: fixed;
+    width: 40px;
+    left: 40px;
+    top: 20px;
+    height: auto;
+}

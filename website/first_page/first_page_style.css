@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* Apply the Montserrat font to the whole document */
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Background Image */
+.image {
+    background-image: url("../site-assets/halocon-logo.svg");
+    background-size: 15%;
+    background-position: center center;
+    background-position-y: -5px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: -1;
+}
+
+/* Main Content */
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Body */
+body {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #212020 /*Light: #f0f0f0*/;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #9e55f8;
+}
+
+/* Input Styles */
+input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #9e55f8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #7b3fb4;
+}
+#msg {
+    color: #f0f0f0;
+    margin-left: 10px;
+}
+form,#msg {
+    margin-left: 7px;
+}
+
+/*Loader*/
+.loader {
+    width: 120px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+.loader-text {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    color: #9e55f8; /* Changed color */
+    animation: text_713 2s ease both infinite;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.load {
+    background-color: #7b3fb4; /* Changed color */
+    border-radius: 50px;
+    display: block;
+    height: 16px;
+    width: 16px;
+    bottom: 0;
+    position: absolute;
+    transform: translateX(32px);
+    animation: loading_713 2s ease both infinite;
+}
+
+.load::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #9e55f8; /* Changed color */
+    border-radius: inherit;
+    animation: loading2_713 2s ease both infinite;
+
+}
+
+@keyframes text_713 {
+0% {
+    letter-spacing: 1px;
+    transform: translateX(0px);
+}
+
+40% {
+    letter-spacing: 2px;
+    transform: translateX(26px);
+}
+
+80% {
+    letter-spacing: 1px;
+    transform: translateX(32px);
+}
+
+90% {
+    letter-spacing: 2px;
+    transform: translateX(0px);
+}
+
+100% {
+    letter-spacing: 1px;
+    transform: translateX(0px);
+}
+}
+
+@keyframes loading_713 {
+0% {
+    width: 16px;
+    transform: translateX(0px);
+}
+
+40% {
+    width: 100%;
+    transform: translateX(0px);
+}
+
+80% {
+    width: 16px;
+    transform: translateX(64px);
+}
+
+90% {
+    width: 100%;
+    transform: translateX(0px);
+}
+
+100% {
+    width: 16px;
+    transform: translateX(0px);
+}
+}
+
+@keyframes loading2_713 {
+0% {
+    transform: translateX(0px);
+    width: 16px;
+}
+
+40% {
+    transform: translateX(0%);
+    width: 80%;
+}
+
+80% {
+    width: 100%;
+    transform: translateX(0px);
+}
+
+90% {
+    width: 80%;
+    transform: translateX(15px);
+}
+
+100% {
+    transform: translateX(0px);
+    width: 16px;
+}
+}

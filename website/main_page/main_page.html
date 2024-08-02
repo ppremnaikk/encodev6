@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Round-1</title>
+        <link rel="stylesheet" type="text/css" href="main_page_style.css">
+        <link rel="icon" href="../site-assets/Group 10-encode.svg">
+        <script>
+            history.pushState(null, null, location.href);
+            window.onpopstate = (event) => {
+                history.go(1);
+            };
+        </script>
+    </head>
+    <body>
+        <!--<div class="image"></div>-->
+        <div id="timer"></div>
+        <img id="halocon" src="../site-assets/Halocon-White.svg">
+        <img id="encode" src="../site-assets/encode-red.svg">
+        <div class="content">
+        <h1>Placeholder</h1>
+        <br>
+        <div id="questions">
+            <h3><u>Round-1</u></h3>
+                Q1: You are in need of a custom function to generate an integer from a specified range. However, you are not allowed to use the built-in 'random' library for this task. Your challenge is to develop a Python function that takes a range as input and produces an integer within that range, adhering to your design's restrictions. This function should be capable of generating a diverse range of integers based on the provided input range.
+                <br><br>
+                Q2: You are given an m x n integer matrix with the following two properties: Each row is sorted in non-decreasing order. The first integer of each row is greater than the last integer of the previous row. Given an integer target, return true if the target is in matrix or false otherwise. You must write a solution in O(log(m * n)) time complexity.
+                <br><br>
+                Q3: A message containing letters from A-Z can be encoded into numbers using the following mapping: 'A' -> "1" 'B' -> "2" ... 'Z' -> "26" To decode an encoded message, all the digits must be grouped then mapped back into letters using the reverse of the mapping above (there may be multiple ways). For example, "11106" can be mapped into: "AAJF" with the grouping (1 1 10 6) "KJF" with the grouping (11 10 6) Note that the grouping (1 11 06) is invalid because "06" cannot be mapped into 'F' since "6" is different from "06". Given a string s containing only digits, return the number of ways to decode it.
+                <br><br>
+                Q4: You have an array of integers, and your task is to identify the nth element from this array. You are required to implement a function that accomplishes this efficiently, with a time complexity of O(n log n). This function should be able to analyze the input array, sort it in a suitable manner, and then pinpoint the nth integer for you.
+                <br><br>
+                Q5: Imagine you have an array of integers and a target value. Your objective is to locate a pair of elements from this array that, when summed, result in the given target value. To achieve this, you need to devise a function that can handle the provided array and target value efficiently, with a time complexity of O(n log n). The function should delve into the array, possibly sort it, and then zero in on the two elements that together yield the desired target sum.
+                <br><br>
+                Q6: You are exploring a curious realm of numbers known as Dudeney Numbers. These numbers have a special property: the sum of their digits is equal to their cube root. For instance, cbrt(512) equals 8, and interestingly, 5 + 1 + 2 also equals 8. Your mission is to construct a program that identifies and prints Dudeney Numbers within a given range, say from 1 to 'n'. This program should traverse this range, examining numbers, applying the cube root and digit sum operations, and then announcing any Dudeney Numbers found.
+                <br><br>
+                Q7: Imagine you have an array of 9 integers, each representing a specific value: 0 stands for " ", 1 represents "X", and 2 symbolizes "O". Your task is to create a program that takes this array and transforms its integers into their corresponding string representations (" ", "X", or "O"). Furthermore, you need to arrange these transformed values into a 3x3 grid format and display it, forming a visual game board. This program should have the capability to dynamically interpret the integer array and showcase the game board accordingly.
+                <br><br>
+                Q8: You are presented with a linguistic challenge. Given a word, you need to determine if it's hard to pronounce. A word is categorized as hard to pronounce if it contains four or more consecutive consonants. You are required to design a program that analyzes the input word and applies this specific criterion. This program should be able to detect such consecutive consonants in the word and make the decision on its pronounceability accordingly.
+                <br><br>
+                Q9: You are a software developer, you have to switch between different languages sometimes. Each programming language has some features, which are represented by integers here. Currently, you have to use a language with two given features A and B. You have two options --- switching to a language with two features A1 and B1, or to a language with two features A2 and B2. All four features of these two languages are pairwise distinct. You have to determine if you can use the first language, the second language or neither of these languages (if no single language has all the required features).
+                <br>
+                Input:
+                First and only line contains a list of 6 integers. First 2 elements give the required features, the next two give the features of the first language, and the next two give the features of the second language.
+                <br><br>
+                Output:<br>
+                print 0 if you cannot switch<br>
+                print 1 if you can switch to first language<br>
+                print 2 if you can switch to second language<br>
+                <br><br>
+                Q10: Picture yourself as a mathematician in an era where the common methods of calculating powers are unavailable to you. You possess an unyielding curiosity to transcend conventional techniques and design a function that can elevate a given number to a specified power. Yet, you are tasked with an intriguing constraint: you must craft this function without employing the built-in 'pow()' function or the exponentiation '**' operator.
+                <br>
+                Your goal is to create a Python function that, when provided with a base number and an exponent, can perform this mathematical feat using an innovative approach. This function should systematically calculate the result by employing elementary arithmetic operations, giving you the ability to compute any power. This endeavor invites you to think creatively and usher in a novel solution that showcases your prowess in manipulating numbers.
+            </div>
+        </div>
+        <script src="main_page_script.js"></script>
+    </body>
+</html>
