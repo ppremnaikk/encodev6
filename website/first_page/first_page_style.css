@@ -7,7 +7,8 @@ html {
 
 /* Background Image */
 .image {
-    background-image: url("../site-assets/halocon-logo.svg");
+    filter: invert(41%) sepia(82%) saturate(2010%) hue-rotate(352deg) brightness(99%) contrast(94%);
+    background-image: url("../site-assets/Halocon-White.svg");
     background-size: 15%;
     background-position: center center;
     background-position-y: -5px;
@@ -36,7 +37,7 @@ body {
 /* Headings */
 h1 {
     text-align: center;
-    color: #9e55f8;
+    color: #f56119;
 }
 
 /* Input Styles */
@@ -55,7 +56,7 @@ input[type="text"] {
 
 /* Submit Button */
 input[type="submit"] {
-    background-color: #9e55f8;
+    background-color: #f56119;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -67,7 +68,7 @@ input[type="submit"] {
 
 /* Hover effect for submit button */
 input[type="submit"]:hover {
-    background-color: #7b3fb4;
+    background-color: #f56119;
 }
 #msg {
     color: #f0f0f0;
@@ -98,14 +99,14 @@ form,#msg {
     top: 0;
     padding: 0;
     margin: 0;
-    color: #9e55f8; /* Changed color */
+    color: #f56119; /* Changed color */
     animation: text_713 2s ease both infinite;
     font-size: 0.8rem;
     letter-spacing: 1px;
 }
 
 .load {
-    background-color: #7b3fb4; /* Changed color */
+    background-color: #f56119; /* Changed color */
     border-radius: 50px;
     display: block;
     height: 16px;
@@ -121,7 +122,7 @@ form,#msg {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #9e55f8; /* Changed color */
+    background-color: #f56119; /* Changed color */
     border-radius: inherit;
     animation: loading2_713 2s ease both infinite;
 
