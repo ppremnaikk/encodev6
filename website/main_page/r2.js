@@ -24,4 +24,4 @@ function redirect(loc) {
     window.location.href = loc;
 }
 const timeDiv = "timer";
-timer(20,timeDiv);
+timer(80,timeDiv);

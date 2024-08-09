@@ -17,7 +17,7 @@ but.addEventListener("click",(event) => {
     event.preventDefault();
     const inp = document.querySelector("#schName").value
     if (inp.length !== 0 && inp.includes("school")) {
-        redirect("../main_page/r2.html")
+        redirect("../main_page/main_page.html")
     }
     else {
         const div = document.querySelector("#msg");
