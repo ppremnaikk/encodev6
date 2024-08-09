@@ -7,22 +7,53 @@
             #text {
                 text-align: center;
                 font-size: 65px;
-                color: #9e55f8;
+                color: #f56119;
                 font-family: 'Montserrat', sans-serif;
             }
             body {
                background-color: 212020;
             }
             img {
-                width: 60%;
+                z-index: -1;
+                position: absolute;
+                /* position: fixed; */
+                top: 0;
+                left: 0;
+            }
+            #encode {
+                width: 250px;
                 height: auto;
-                margin-top: 90px;
+                top: 15px;
+                left: calc(50% - 125px);
+                z-index: 3;
             }
-            .logo {
+            div {
+                height: 50%;
+                text-align: center;
+                color: #ff6119;
+                font-size: 65px;
+                /* top: calc(50% - 50px); */
+                transform: translateY(85%);
+            }
+            /* .image {
+                background-image: url("site-assets/encode-red.svg");
+                background-size: 35%;
+                background-position: center center;
+                background-position-y: -5px;
+                background-repeat: no-repeat;
                 display: flex;
-                align-items: center;
                 justify-content: center;
-            }
+                vertical-align: middle;
+                align-items: center;
+                height: 100vh;
+                z-index: -1;
+            } */
+            /* .logo {
+                display: block;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+            } */
         </style>
         <script>
             history.pushState(null, null, location.href);
@@ -32,10 +63,7 @@
         </script>
     </head>
     <body>
-        <h1 id="text">Time's up</h1>
-        <br>
-        <div class="logo">
-            <img src="site-assets/Group 10-encode.svg">
-        </div>
+        <img id="encode" src="site-assets/encode-red.svg">
+        <div>Time's Up</div>
     </body>
 </html>

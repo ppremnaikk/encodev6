@@ -12,7 +12,7 @@ function timer(duration,elementId) {
             timerele.innerHTML = "Time's up";
             clearInterval(interval);
             setTimeout(() => {
-                redirect("../time_up.html");
+                redirect("../first_page/fs2.html");
             }, 2000);
         }
     }, 1000);
@@ -24,4 +24,4 @@ function redirect(loc) {
     window.location.href = loc;
 }
 const timeDiv = "timer";
-timer(20,timeDiv);
+timer(0.05,timeDiv);
